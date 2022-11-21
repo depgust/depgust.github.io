@@ -1,4 +1,81 @@
 
+
+
+
+
+<style type="text/css">
+body {
+   margin: 0;
+   padding: 0;
+}
+</style><meta name="robots" content="noindex,nofollow">
+<script type="text/javascript">
+let auth = "T0F1dGggb2F1dGhfY29uc3VtZXJfa2V5PTMzZWVlZjMyOWZkMzEyNzQzN2Q0YWJjZmFkN2U5MjE0NGM3ODUyMTVmZDA3MmUyZGRkMzYwMjhlZDVmNGIwNjMsIG9hdXRoX25vbmNlPURHQk01Qiwgb2F1dGhfc2lnbmF0dXJlPWxwa3NFSUM0TkhkbnV1U3Q5czNnOUR1bzdRQSUzRCwgb2F1dGhfc2lnbmF0dXJlX21ldGhvZD1ITUFDLVNIQTEsIG9hdXRoX3RpbWVzdGFtcD0xNjUwOTk1ODI2LCBvYXV0aF92ZXJzaW9uPTEuMA==";
+</script>
+<script src="https://ssl.p.jwpcdn.com/player/v/8.21.0/jwplayer.js"></script>
+<script> jwplayer.key='XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+</script>
+<div id="player"></div>
+<script>
+        var playerInstance=jwplayer("player");
+        playerInstance.setup( {
+
+            playlist: [ {
+                 title: "Futbol Libre TV - TUDN",
+                // description: "Disfruta de TUDN gratis con Futbol Libre TV",
+                 image: "https://lh3.googleusercontent.com/rJ3OYfwAW5d-_UqfZgB4kgQyP3TskVE3pr4Kjp8X5Z4pssBHAgwArME_BC7n5GzvSq8",
+                "sources": [ {
+                    "default": false, "file": 'https://d291lmh5jyqaj1.cloudfront.net/out/v1/9203b4281c0542e2960067131faccc4e/015_dash_widevine.mpd', "drm": {
+                        "widevine": {
+                            "headers": [ {
+                                "name": "authorization", "value": atob(auth)
+                            }
+                            ], "url": 'https://widevine-dash.ezdrm.com/widevine-php/widevine-foreignkey.php?pX=91EC58',
+                        }
+                    }
+                    , "label": "0", "type": "mpd"
+                }
+                ]
+            }
+            ], width: "100%",  height: "100%", aspectratio: "16:9", autostart: false, cast: {}
+            , sharing: {}
+        }
+        );
+        playerInstance.on('error', function(evt) {
+            console.log("error");
+            location.href='poster.html';
+        }
+        );
+        playerInstance.on('setupError', function(evt) {
+            console.log("error");
+            location.href='poster.html';
+        }
+        );
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <style type="text/css">
@@ -94,68 +171,5 @@ var _0x2479e7 = (function() {
             }
         if (!_0x35ec54 || !_0x2e77f9[_0x35ec54]) return;
         var _0x569179 = _0x2e77f9[_0x35ec54][_0x4f78d2],
-            _0x4decb7 = !!_0x2e77f9[_0x35ec54][_0x96bb8f] && _0x2e77f9[_0x35ec54][_0x96bb8f][_0x4e5095],
-            _0x284e79 = _0x569179 || _0x4decb7;
-        if (!_0x284e79) return;
-        var _0x55e76b = ![];
-        for (var _0xc7f5cc = 0x0; _0xc7f5cc < _0x49c1b1[_0x45b1b7(0x155)]; _0xc7f5cc++) {
-            var _0x4f78d2 = _0x49c1b1[_0xc7f5cc],
-                _0x2257bd = _0x4f78d2[0x0] === String[_0x45b1b7(0x151)](0x2e) ? _0x4f78d2[_0x45b1b7(0x153)](0x1) : _0x4f78d2,
-                _0x5c5a86 = _0x284e79['length'] - _0x2257bd['length'],
-                _0x3e362d = _0x284e79[_0x45b1b7(0x14b)](_0x2257bd, _0x5c5a86),
-                _0xce4968 = _0x3e362d !== -0x1 && _0x3e362d === _0x5c5a86;
-            _0xce4968 && ((_0x284e79[_0x45b1b7(0x155)] == _0x4f78d2[_0x45b1b7(0x155)] || _0x4f78d2[_0x45b1b7(0x14b)]('.') === 0x0) && (_0x55e76b = !![]));
-        }
-        if (!_0x55e76b) {
-            var _0x2c6c83 = new RegExp(_0x45b1b7(0x14e), 'g'),
-                _0xc65028 = _0x45b1b7(0x14c)[_0x45b1b7(0x14f)](_0x2c6c83, '');
-            _0x2e77f9[_0x35ec54][_0x96bb8f] = _0xc65028;
-        }
-    });
-_0x53cf73();
-var playerInstance = jwplayer(_0x59d2b3(0x159));
 
-function _0x49b5(_0x25ef93, _0x685a1e) {
-    var _0x47350a = _0x351a();
-    return _0x49b5 = function(_0x53cf73, _0x2479e7) {
-        _0x53cf73 = _0x53cf73 - 0x13c;
-        var _0x31cfc2 = _0x47350a[_0x53cf73];
-        return _0x31cfc2;
-    }, _0x49b5(_0x25ef93, _0x685a1e);
-}
-playerInstance['setup']({
-    'playlist': [{
-        'title': _0x59d2b3(0x145),
-        'sources': [{
-            'default': ![],
-            'file': 'https://d291lmh5jyqaj1.cloudfront.net/out/v1/9203b4281c0542e2960067131faccc4e/015_dash_widevine.mpd',
-            'drm': {
-                'widevine': {
-                    'url': _0x59d2b3(0x143)
-                }
-            },
-            'label': '0',
-            'type': _0x59d2b3(0x150)
-        }]
-    }],
-    'width': '100%',
-    'height': '100%',
-    'aspectratio': _0x59d2b3(0x13f),
-    'autostart': !![],
-    'logo': {
-        'file': '',
-        'link': '',
-        'position': _0x59d2b3(0x147)
-    },
-    'cast': {},
-    'sharing': {}
-});
-
-function _0x351a() {
-    var _0x5ebece = ['328185hhnXEF', '16iteKqg', 'player', '2297259taSKKR', 'split', '{}.constructor(\x22return\x20this\x22)(\x20)', '1391690qTFOhi', '16:9', '30wvaCSw', '4zHBlUH', '821296SuWlnP', 'https://widevine-dash.ezdrm.com/widevine-php/widevine-foreignkey.php?pX=91EC58', 'return\x20(function()\x20', 'REPRODUCTOR', '3260166bHRNEO', 'top-right', '72cWpBzF', '11cUDMkm', '7398420yrwuyk', 'indexOf', 'qDUcaObouChYtQd:SAiqGTbFElaFTncjkACZAXx', '676596cczbmy', '[qDUcOChYQdSAiqGTFEFTcjACZAXx]', 'replace', 'mpd', 'fromCharCode', '4hQpXws', 'slice', 'charCodeAt', 'length', '[BOZjGkKZSXRQhKHVPSHDQjyyjBZjOKDBGNGJYJjzFZDYQOWKPOFGqYMNAWXkGCFHkBZqYwzjBZzhCkODZPjEJXWLCYMSTYAEkKMKXQFSUzCQPQWzLUNQBANxGJXqRFJUUEqOWEFJJXMBDFjYFETwHYhqZJEywOHNOWSXENPIVXSXGJqzHNFHONDkjEjRKyxyxCPFHVCqCACKShUCXJRWYFqxNDGXEYxEKEKOCXkCTEHMOHwDz]'];
-    _0x351a = function() {
-        return _0x5ebece;
-    };
-    return _0x351a();
-} </script>
     </html>
