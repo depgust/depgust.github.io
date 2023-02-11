@@ -1,3 +1,51 @@
-<div style="overflow: hidden; padding-bottom: 56.25%; position: relative;">
-<iframe allow="encrypted-media" allowfullscreen="" frameborder="0" height="100%" marginheight="0" marginwidth="0" scrolling="no"sandbox="allow-same-origin allow-top-navigation allow-forms allow-scripts" src="https://librefutbol.online/11.html?get=aHR0cHM6Ly9saXZlLmNmLmxhdGFtLmhib21heGNkbi5jb20vY21hZi9saXZlLzIwMzE2MTIvZGFzaC9jZW5jLzI3ODY5L21hc3Rlci5tcGQ=&key=MDEwMTA5NTNjNDZkMThmYzQzOTNjNjI2OGJmNmY4ZDk=&key2=NzYzZDE3NzVkOTQ1MjE3YzhjMGU5YTZmNTNmY2JiZjg=" style="position: absolute;" width="100%"></iframe>
-</div>
+
+<html lang="es">
+  <head>
+  <meta name="robots" content="noindex" />
+  <script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.0/dist/clappr.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script>
+  <script src='//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js'></script>
+  <script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script>
+  <script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
+  <script src='//cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js'></script>
+  <script src="//cdn.jsdelivr.net/npm/shaka-player@2.5.10/dist/shaka-player.compiled.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.external.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/cdnbye-shaka@latest"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+  <style> 
+  
+  .player-poster[data-poster] {
+    background-size: cover;
+  }
+  body{
+    margin:0;
+    padding:0;
+  }
+  
+  </style>
+  </head>
+  <div id="player"></div>
+  <script>
+  var player = new Clappr.Player({
+          source: 'https://tvup-live.secure2.footprint.net/telecincohd/telecincohd.mpd',
+          mimeType: 'application/dash+xml',
+          height: '100%',
+          width: '100%',
+          plugins: [LevelSelector, DashShakaPlayback, ChromecastPlugin, ClapprPip.PipButton, ClapprPip.PipPlugin, Clappr.MediaControl],
+          events: {onReady: function() {var plugin = this.getPlugin('click_to_pause'); plugin && plugin.disable();},},
+          chromecast: {
+              appId: '9DFB77C0',
+              contentType: 'video/mp4',
+          },
+          shakaConfiguration: {
+              drm: {
+              clearKeys: {
+						'dce5deb54b865167800919adc9e02785': '1baeb5122a0d4c551b67342249eea325',
+						'fd3d89fcb6915064a798c8b67a7c8052': '3c2728904658076c9ba84252d777f2e2'
+                  }
+              },
+          },
+          shakaOnBeforeLoad: function (shaka_player) {},
+          parentId: '#player'
+      });
+  </script>
