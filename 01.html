@@ -1,13 +1,18 @@
 
 <!DOCTYPE html>
 <html lang="es">
+<head>
+<meta http-Equiv="Cache-Control" Content="no-cache" />
+<meta http-Equiv="Pragma" Content="no-cache" />
+<meta http-Equiv="Expires" Content="0" />
+</head>
 <style type="text/css">
 body {
    margin: 0;
    padding: 0;
 }
 </style>
-<script src="//ssl.p.jwpcdn.com/player/v/8.21.0/jwplayer.js"></script>
+<script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
 <script> jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
 </script>
 <div id="player"></div>
@@ -18,14 +23,15 @@ body {
     playerInstance.setup({
 
         playlist: [{
-            "title": "REPRODUCTOR",
+            "title": "Star+",
+			"image": 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/A08193C4226A55903C65D93EB34D21E87E529BCA16CAF6B507B07542D87FD87A/scale?width=1920',
             "sources": [
                 {
                     "default": false,
                     "type": "dash",
-                    "file": 'https://live-ftc-na-south-2.media.starott.com/clt2/va01/starplus/event/2023/02/05/Boca_Juniors_vs_Central_C_20230205_1675629053024/ctr-all-complete.m3u8',
+                    "file": 'https://live-ftc-na-south-2.media.starott.com/gru1/qb01/starplus/event/2023/02/11/Monaco_vs_PSG_20230211_1676124635068/ctr-all-complete.m3u8',
                     "drm": {
-                        "clearkey": { "keyId": "8fa6a87561494c14b791b06f358613ee", "key": "5bfbec1112855355923ca9ab278b3812" }
+                        "clearkey": {"keyId": "5b61fd84db204c78b06251af76321f75", "key": "1ad39414ef11540e41ee55cb4a70ce0c"}
                     },
                     "label": "0"
                 }
@@ -34,13 +40,9 @@ body {
         width: "100%",
         height: "100%",
         aspectratio: "16:9",
-autostart: true,
-			 logo: {
- 					 file: '',
- 					 link: '',
-  						position: 'top-right'
-  					},
+autostart: false,
 			cast:{},
 			sharing: {}
     });
 </script>
+</html>
