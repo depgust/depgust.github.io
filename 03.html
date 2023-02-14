@@ -1,3 +1,48 @@
-<div style="overflow: hidden; padding-bottom: 56.25%; position: relative;">
-<iframe allow="encrypted-media" allowfullscreen="" frameborder="0" height="100%" marginheight="0" marginwidth="0" scrolling="no"sandbox="allow-same-origin allow-top-navigation allow-forms allow-scripts" src="Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzExMDQvbWFuaWZlc3QubXBk&key=NjZhNjFjZjIyZTU5NTZjNDliODllY2JjNTYwNDkyNDg=&key2=NTFmYzQ1ZjVhNmYxODRiOTkxNjYzMWFjMzFmOTU2NTM=&lang=1" style="position: absolute;" width="100%"></iframe>
-</div>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-Equiv="Cache-Control" Content="no-cache" />
+<meta http-Equiv="Pragma" Content="no-cache" />
+<meta http-Equiv="Expires" Content="0" />
+</head>
+<style type="text/css">
+body {
+   margin: 0;
+   padding: 0;
+}
+</style>
+<script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
+<script> jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+</script>
+<div id="player"></div>
+<script>
+
+    var playerInstance = jwplayer("player");
+
+    playerInstance.setup({
+
+        playlist: [{
+            "title": "Star+",
+			"image": 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/46A759D8469520CB45725F10952A9C8EC9AA55D472E94E90E181F7D37AFFE9E2/scale?width=1920',
+            "sources": [
+                {
+                    "default": false,
+                    "type": "dash",
+                    "file": 'https://live-ftc-na-south-2.media.starott.com/gru1/qb01/starplus/event/2023/02/14/PSG_vs_Bayern_Munich_Roun_20230214_1676398256016/ctr-all-complete.m3u8',
+                    "drm": {
+                        "clearkey": {"keyId": "5e7ac1e0d88448a1a4d641a67f23b458", "key": "32b7c739114a165269d20b295674515a"}
+                    },
+                    "label": "0"
+                }
+            ]
+        }],
+        width: "100%",
+        height: "100%",
+        aspectratio: "16:9",
+autostart: false,
+			cast:{},
+			sharing: {}
+    });
+</script>
+</html>
