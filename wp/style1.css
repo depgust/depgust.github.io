@@ -1,0 +1,25 @@
+.home-header:where(.astro-TQCYQLMI) {
+    max-width: 700px
+}
+
+.title:where(.astro-TQCYQLMI) {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.1
+}
+
+.lead:where(.astro-TQCYQLMI) {
+    font-size: 1.25rem;
+    font-weight: 300
+}
+
+.d-5:where(.astro-NRL4VRYC) {
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 1.1;
+    text-align: center
+}
+
+.iframe-placeholder:where(.astro-NRL4VRYC) {
+    background: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100% 100%"><text fill="%23FFFFFF" x="50%" y="50%" font-family="\'Lucida Grande\', sans-serif" font-size="20" text-anchor="middle">Cargando agenda...</text></svg>')0 0 no-repeat
+}
